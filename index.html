@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TechMaze 2025</title>
+   <link rel="stylesheet" href="index.css">
+   <!-- <link rel="module" href="index.js"> -->
+</head>
+<body>
+   <div id="current-ps-details">
+      <div id="ps-info">
+         <div id="ps-header-value">00</div>
+         <div id="ps-min-bid">
+            Min:&nbsp;
+            <div id="ps-min-bid-value">000</div>
+         </div>
+      </div>
+      <div id="biddings">
+         <div class="bid-container" id="highest-bid-container">
+            <div class="bid-label">HIGHEST</div>
+            <div class="line"></div>
+            <div class="bid-value" id="highest-bid-value">0000</div>
+            <div class="bid-team">
+               Team:&nbsp;
+               <div id="highest-bid-team-name">________</div>
+            </div>
+         </div> 
+         <div class="bid-container" id="your-bid-container">
+            <div class="bid-label">YOUR</div>
+            <div class="line"></div>
+            <div class="bid-value" id="your-bid-value">0000</div>
+            <div class="bid-team">
+               Team:&nbsp;
+               <div id="your-bid-team-name">________</div>
+            </div>
+         </div> 
+      </div>
+   </div>
+
+   <div class="line"></div>
+   <div id="team-details">
+      <div id="realtime-team-details">
+         <div id="realtime-details">
+            <div class="team-info" id="realtime-balance">
+               Balance:&nbsp;
+               <div id="current-bal">0000</div>
+            </div>
+            <div class="team-info" id="realtime-total-ps">
+               PS:&nbsp;
+               <div id="total-ps">0</div>
+            </div>
+         </div>
+         <div id="raise-bid-btn-container">
+            <button class="custom-button" id="raise-bid-btn">Raise Bid</button>
+         </div>
+      </div>
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>
