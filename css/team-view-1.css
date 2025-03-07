@@ -133,6 +133,10 @@ body {
       font-size: 1.5rem;
    }
 
+   #biddings {
+      flex-direction: column;
+   }
+
    .bid-container {
       margin: 1.5rem;
       font-size: 2rem;
@@ -181,6 +185,10 @@ body {
       font-size: 1rem;
    }
 
+   #biddings {
+      flex-direction: column;
+   }
+
    .bid-container {
       font-size: 1.8rem;
       margin: 1rem;
@@ -227,6 +235,10 @@ body {
 
    #ps-min-bid {
       font-size: 1rem;
+   }
+
+   #biddings {
+      flex-direction: column;
    }
 
    .bid-container {

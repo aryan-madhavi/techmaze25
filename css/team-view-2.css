@@ -34,6 +34,10 @@
       margin-bottom: 1rem;
    }
 
+   #auction-details {
+      flex-direction: column;
+   }
+
    #realtime-details .bid-team {
       font-size: 1.5rem;
    }
@@ -53,6 +57,10 @@
    #current-ps-details {
       height: auto;
       margin-bottom: 0.5rem;
+   }
+
+   #auction-details {
+      flex-direction: column;
    }
 
    #realtime-details .bid-team {
