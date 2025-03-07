@@ -1,0 +1,42 @@
+/* General styling */
+body {
+   background-color: #eee;
+   display: flex;
+   flex-direction: column;
+   padding: 33vh 33%;
+   gap: 2rem;
+}
+
+button {
+   font-family: 'Consolas';
+   font-size: 5rem;
+}
+
+a {
+   color: #222;
+   text-decoration: none;
+}
+
+/* Responsive Styles */
+
+/* For smaller screens like tablets and mobile devices */
+@media (max-width: 768px) {
+   body {
+      padding: 20vh 10%;  /* Reduce padding on smaller screens */
+   }
+
+   button {
+      font-size: 3rem; /* Reduce font size for buttons */
+   }
+}
+
+/* For very small screens like mobile */
+@media (max-width: 480px) {
+   body {
+      padding: 15vh 5%;  /* Reduce padding further */
+   }
+
+   button {
+      font-size: 2.5rem;  /* Further reduce button font size */
+   }
+}

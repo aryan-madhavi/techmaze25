@@ -1,0 +1,69 @@
+#current-ps-details {
+   height: 52vh;
+   margin-bottom: 1rem;
+}
+
+#realtime-team-details {
+   align-items: center;
+}
+
+#realtime-details .bid-team {
+   font-size: 2rem;
+}
+
+#your-bid {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+#your-bid-value {
+   font-size: 6rem;
+}
+
+#realtime-balance, #realtime-total-ps {
+   font-size: 2rem;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px (tablets and smaller devices) */
+@media (max-width: 768px) {
+   #current-ps-details {
+      height: auto;
+      margin-bottom: 1rem;
+   }
+
+   #realtime-details .bid-team {
+      font-size: 1.5rem;
+   }
+
+   #your-bid-value {
+      font-size: 4rem;
+   }
+
+   #realtime-balance, #realtime-total-ps {
+      font-size: 1.5rem;
+   }
+   
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+   #current-ps-details {
+      height: auto;
+      margin-bottom: 0.5rem;
+   }
+
+   #realtime-details .bid-team {
+      font-size: 1.2rem;
+   }
+
+   #your-bid-value {
+      font-size: 3rem;
+   }
+
+   #realtime-balance, #realtime-total-ps {
+      font-size: 1.2rem;
+   }
+}
