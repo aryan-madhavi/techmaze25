@@ -3,15 +3,26 @@ body {
    color: #eee;
    font-family: monospace;
    font-size: 1.5rem;
+   cursor: default;
 }
 
 .div-elem {
-   padding: 2rem 4rem;
+   margin: 3rem;
    align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
 }
 
 .heading {
    font-size: 5rem;
+   margin: 1rem 0rem;
+   display: flex;
+   justify-content: center;
+}
+
+.sub-heading {
+   font-size: 3rem;
    margin: 1rem 0rem;
 }
 
@@ -27,39 +38,309 @@ body {
    background: #cb9d06;
 }
 
+#dotted {
+   background: repeating-linear-gradient(90deg, #0c0c0c, #cb9d06, #0c0c0c 5rem);
+   height: 0.3rem;
+   margin-top: 0.5rem;
+}
+
+.rounded-border {
+   border: #cb9d06 0.15rem solid;
+   border-radius: 2rem;
+   width: max-content;
+   height: min-content;
+   text-align: center;
+   padding: 1rem 2rem;
+}
+
 .custom-button {
    font-family: inherit;
-   font-size: 4rem;
-   padding: 1.5rem 3rem;
-   background-color: hsl(182, 25%, 40%);
+   font-size: 3rem;
+   padding: 1rem;
+   background-color: hsl(46, 94%, 40%);
    color: #222;
-   border-radius: 2.5rem;
+   border-radius: 0.8rem;
    cursor: pointer;
    transition: background-color 0.25s;
    height: min-content;
 }
 
 .custom-button:hover {
-   background-color: hsl(182, 25%, 50%);
+   background-color: hsl(46, 94%, 47%);
+}
+
+.floating-btn {
+   position: fixed;
+   bottom: 4.5rem;
+   right: 1.5rem;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s ease;
+}
+ 
+.floating-btn:hover {
+   transform: scale(1.05); 
 }
 
 #current-ps {
+   margin-top: 0rem;
+}
+
+#bid-info {
+   gap: 2rem;
+}
+
+.bid-container {
    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+   flex-direction: column;
+   margin: 2.5rem;
+   font-size: 2.5rem;
+   height: min-content;
+}
+
+#bid-label {
+   font-size: 4rem;
+}
+
+#bid-value {
+   font-size: 5.5rem;
+   text-align: center;
+}
+
+#bid-team {
+   font-size: 1.8rem;
+   justify-content: center;
 }
 
 #timer {
-   border: #cb9d06 2px solid;
-   border-radius: 2rem;
-   width: max-content;
-   height: min-content;
-   text-align: center;
-   padding: 1rem;
-   font-size: 4rem;
+   font-size: 3rem;
 }
 
 #timer-value {
    width: 100%;
-   font-size: 10cqw;
+   font-size: 8cqw;
+}
+
+#user-details {
+   text-align: center;
+}
+
+#current-bal {
+   font-size: 3rem;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1200px) {
+   .div-elem {
+      flex-direction: column;
+      margin: 2rem;
+   }
+
+   .heading {
+      font-size: 4rem;
+   }
+
+   .sub-heading {
+      font-size: 2.5rem;
+   }
+
+   .custom-button {
+      font-size: 2.5rem;
+   }
+
+   #bid-label {
+      font-size: 3.5rem;
+   }
+
+   #bid-value {
+      font-size: 4.5rem;
+   }
+
+   #bid-team {
+      font-size: 1.6rem;
+   }
+
+   #timer {
+      font-size: 2.5rem;
+   }
+
+   #timer-value {
+      font-size: 4rem;
+   }
+
+   #current-bal {
+      font-size: 2.5rem;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .heading {
+      font-size: 3.5rem;
+   }
+
+   .sub-heading {
+      font-size: 2rem;
+   }
+
+   .custom-button {
+      font-size: 2rem;
+   }
+
+   #bid-label {
+      font-size: 3rem;
+   }
+
+   #bid-value {
+      font-size: 4rem;
+   }
+
+   #bid-team {
+      font-size: 1.5rem;
+   }
+
+   #timer {
+      font-size: 2.2rem;
+   }
+
+   #timer-value {
+      font-size: 4rem;
+   }
+
+   #current-bal {
+      font-size: 2rem;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   body {
+      font-size: 1.2rem;
+   }
+
+   .heading {
+      font-size: 3rem;
+   }
+
+   .sub-heading {
+      font-size: 1.8rem;
+   }
+
+   .custom-button {
+      font-size: 1.8rem;
+   }
+
+   #bid-label {
+      font-size: 2.8rem;
+   }
+
+   #bid-value {
+      font-size: 3.5rem;
+   }
+
+   #bid-team {
+      font-size: 1.4rem;
+   }
+
+   #timer {
+      font-size: 2rem;
+   }
+
+   #timer-value {
+      font-size: 4rem;
+   }
+
+   #current-bal {
+      font-size: 1.8rem;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   body {
+      font-size: 1rem;
+   }
+
+   .heading {
+      font-size: 2.5rem;
+   }
+
+   .sub-heading {
+      font-size: 1.5rem;
+   }
+
+   .custom-button {
+      font-size: 1.5rem;
+   }
+
+   #bid-label {
+      font-size: 2.5rem;
+   }
+
+   #bid-value {
+      font-size: 3rem;
+   }
+
+   #bid-team {
+      font-size: 1.3rem;
+   }
+
+   #timer {
+      font-size: 1.8rem;
+   }
+
+   #timer-value {
+      font-size: 4rem;
+   }
+
+   #current-bal {
+      font-size: 1.6rem;
+   }
+
+   #user-details {
+      font-size: 1.4rem;
+   }
+}
+
+@media screen and (max-width: 375px) {
+   body {
+      font-size: 0.9rem;
+   }
+
+   .heading {
+      font-size: 2.2rem;
+   }
+
+   .sub-heading {
+      font-size: 1.4rem;
+   }
+
+   .custom-button {
+      font-size: 1.4rem;
+   }
+
+   #bid-label {
+      font-size: 2.2rem;
+   }
+
+   #bid-value {
+      font-size: 2.8rem;
+   }
+
+   #bid-team {
+      font-size: 1.2rem;
+   }
+
+   #timer {
+      font-size: 1.6rem;
+   }
+
+   #timer-value {
+      font-size: 4rem;
+   }
+
+   #current-bal {
+      font-size: 1.4rem;
+   }
+
+   #user-details {
+      font-size: 1.2rem;
+   }
 }

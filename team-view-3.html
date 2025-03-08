@@ -10,35 +10,53 @@
 <body>
    <div class="div-elem" id="current-ps">
       <section id="problem">
-         <section class="heading">Problem Statement</section>
-         <section class="inline-elem" id="ps-number">
-            Number:&nbsp;
-            <section id="ps-number-value">0</section>
+         <section class="heading">
+            <section class="inline-elem">
+               <section id="ps-no-value">PS - 0</section>
+            </section>
          </section>
          <section class="inline-elem" id="ps-statement">
-            PS:&nbsp;
-            <section id="ps-statement-value">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatem possimus fuga illo quibusdam iusto repellat autem non repudiandae maiores, debitis laudantium, praesentium voluptatum reprehenderit earum odio voluptatibus velit cum.</section>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, nemo consequuntur doloremque blanditiis facere pariatur officiis et voluptas! Harum nulla optio beatae, ad ex repellendus eum unde quod placeat. Voluptate.
          </section>
-         <section class="inline-elem" id="ps-difficulty">
-            Difficulty:&nbsp;
-            <section id="ps-statement-value">Hard</section>
-         </section>
-         <section class="inline-elem" id="ps-start-price">
-            Starting Price:&nbsp;
-            <section id="ps-statement-value">200</section>
+            <section class="inline-elem" id="ps-difficulty">
+               Difficulty:&nbsp;
+               <section id="ps-statement-value">Hard</section>
+            </section>
+            <section class="inline-elem" id="ps-start-price">
+               Starting Price:&nbsp;
+               <section id="ps-statement-value">200</section>
+            </section>
+      </section>
+   </div>
+   <div class="line"></div>
+   <div class="div-elem" id="bid-info">
+      <section class="rounded-border" id="highest-bid-container">
+         <section id="bid-label">HIGHEST BID</section>
+         <div class="line" id="dotted"></div>
+         <section id="bid-value">000</section>
+         <section class="inline-elem" id="bid-team">
+            <section id="bid-team-value">0 - ___________</section>
          </section>
       </section>
-      <section id="timer">
+      <section class="rounded-border" id="timer">
          Countdown
-         <!-- <div class="line"></div> -->
+         <div class="line" id="dotted"></div>
          <section id="timer-value">45</section>
       </section>
    </div>
    <div class="line"></div>
-   <div class="div-elem" id="highest-bid">highest-bid</div>
-   <div class="line"></div>
-   <div class="div-elem" id="team-action">team-action</div>
-
+   <div class="div-elem" id="team-action">
+      <section id="user-details">
+         <!-- <section class="sub-heading" id="user-team">0 - ___________</section> -->
+         <section class="inline-elem" id="current-bal">
+            Current Balance:&nbsp;
+            <section id="current-bal-value">0000</section>
+         </section>
+      </section>
+      <section class="floating-btn">
+         <button class="custom-button" id="float">Raise</button>
+      </section>
+   </div>
    <script src="js/index.js"></script>
 </body>
 </html>
